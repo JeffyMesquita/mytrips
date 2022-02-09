@@ -1,4 +1,3 @@
-import { map } from 'leaflet'
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 
 type Place = {

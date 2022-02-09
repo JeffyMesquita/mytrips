@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 export const Wrapper = styled.div`
   position: fixed;
@@ -13,8 +13,8 @@ export const Wrapper = styled.div`
   }
 
   &:hover {
-    svg{
-      color: var(--highlight)
+    svg {
+      color: var(--highlight);
     }
   }
-`;
+`

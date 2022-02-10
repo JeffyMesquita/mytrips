@@ -25,3 +25,47 @@ export const GET_PAGE_BY_SLUG = gql`
     }
   }
 `
+
+export const GET_PLACES = gql`
+  query getPlaces($first: Int) {
+    places {
+      id
+      slug
+      name
+      location {
+        latitude
+        longitude
+      }
+      description {
+        html
+      }
+      gallery {
+        url
+        height
+        width
+      }
+    }
+  }
+`
+
+export const GET_PLACES_BY_SLUG = gql`
+  query getPlacesBySlug($slug: String) {
+    place(where: { slug: $slug }) {
+      id
+      slug
+      name
+      location {
+        latitude
+        longitude
+      }
+      description {
+        html
+      }
+      gallery {
+        url
+        height
+        width
+      }
+    }
+  }
+`

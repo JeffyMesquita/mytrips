@@ -27,7 +27,7 @@ export const GET_PAGE_BY_SLUG = gql`
 `
 
 export const GET_PLACES = gql`
-  query getPlaces($first: Int) {
+  query getPlaces {
     places {
       id
       slug
@@ -60,6 +60,7 @@ export const GET_PLACES_BY_SLUG = gql`
       }
       description {
         html
+        text
       }
       gallery {
         url
